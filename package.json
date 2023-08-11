@@ -1,5 +1,6 @@
 {
-  "name": "myapp3",
+  "homepage": "https://abnos5525.github.io/bcc",
+  "name": "bcc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +25,8 @@
     "yup": "^1.2.0"
   },
   "scripts": {
+    "predeploy":"react-scripts build",
+    "deploy" : "gh-pages -d build",
     "start": "concurrently \"npm run frontend\" \"npm run server\"",
     "frontend": "react-scripts start",
     "server": "cd server && npm start",
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "gh-pages": "^6.0.0"
   }
 }

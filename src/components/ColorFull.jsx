@@ -28,14 +28,11 @@ const ColorFull=()=> {
   }, []);
 
   return (
-    <div
+    <div className=''
       style={{
-        width: '200px',
-        height: '200px',
+        width: '20%',
+        height: '35%',
         backgroundColor: backgroundColor,
-        position: 'absolute',
-        top: '250px',
-        right: '215px',
         border: 'solid 1px'
       }}
     ></div>

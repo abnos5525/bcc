@@ -52,15 +52,20 @@ const App=()=>{
           </div>
 
         </div>
-        <div className='row py-5'>
-          <div className='col-4'>
-          <Clock />
+        <div className='grid'>
+          <div className='row' style={{paddingTop:'10px',paddingBottom:'0'}}>
+            <div className='col-4'>
+            <Clock />
+            </div>
+            <div className='col-4'>
+            <Counter />
+            </div>
           </div>
-          <div className='col-4'>
-          <Counter />
+          <div style={{height:'200px'}}>
+            <ColorFull/>
           </div>
         </div>
-        <ColorFull/>
+        
       </div>
       
       </ContextApp.Provider>

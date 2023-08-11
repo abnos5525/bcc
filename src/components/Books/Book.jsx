@@ -30,10 +30,11 @@ const Book=()=>{
     return( //showing a book details
         <> 
                 <div className='container' 
-        style={{position:'absolute',left:'320px',top:'180px',width:'350px'}}>
+        style={{float:'right',width:'400px', position:'absolute', top:'200px',left:'300px'}}>
         { loading ? <Spinner /> : book.length !== 0 ?(
-            <div className='card p-0' style={{backgroundColor: 'rgb(255, 218, 129)'}}>
-                <div className='card-body'>
+            <div className='card p-0 w-100 float-end' style={{backgroundColor: 'rgb(255, 218, 129)',
+            boxShadow:'4px 4px 30px #333',marginLeft:'300px'}}>
+                <div className='card-body w-100'>
                     <h3 className='card-title' style={{background:'#f09393'}}>
                         {book.name}
                     </h3>
