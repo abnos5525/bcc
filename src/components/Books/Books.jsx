@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink,Outlet, useLocation, useNavigate } from "react-router-dom"
+import { NavLink,Outlet, useNavigate } from "react-router-dom"
 import {deleteBook, getAllBooks} from "../../services/BookServices.js"
 
 import { ContextApp } from '../../context/ContextApp.js'

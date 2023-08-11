@@ -18,6 +18,8 @@ const reducer = (state, action)=>{
             return {num: state.num - 1}
         case COUNTERTYPE.res:
             return {num: 0}
+        default:
+            return state
     }
 }
 
